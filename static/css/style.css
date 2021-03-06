@@ -9,7 +9,7 @@ body {
     display: flex;
 }
 
-.servers__list {
+.nav__list {
     background-color: #333;
     flex: 1;
     max-width: 70px;
@@ -19,6 +19,7 @@ body {
     background-color: #555;
     min-width: 250px;
     max-width: 350px;
+    color: white;
     flex: 3;
 }
 
@@ -28,17 +29,20 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 80px;
-    color: white;
     font-size: 24px;
 }
 
-.server__name .name {
-    color: white;
-    padding: 30px;
+.channels__list .container {
+    margin: 0 25px;
 }
 
-.server__name .settings {
-    padding: 30px;
+.channels__list .category {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.channels__list .category:hover {
+    background-color: #666;
 }
 
 .server__body {
@@ -46,16 +50,22 @@ body {
     flex: 10;
 }
 
-.server__icon {
-    transition: all 0.2s cubic-bezier(0.61, 1, 0.88, 1);
-    width: 50px;
-    height: 50px;
-    background-color: #777;
-    margin: 15px 10px;
-    border-radius: 100px;
+.nav__item i {
+    font-size: 30px;
+    color: #CCC;
+    margin: 10px 0;
 }
 
-.server__icon:hover {
-    border-radius: 10px;
-    transition: all 0.2s cubic-bezier(0,1,0,1);
+.nav__container {
+    background-color: #333;
+    flex: 1;
+    max-width: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
