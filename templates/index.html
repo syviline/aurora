@@ -8,23 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://kit.fontawesome.com/a635fae22c.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="main__container">
-        <nav class="servers__list">
-            <div class="server__icon"></div>
-            <div class="server__icon"></div>
-            <div class="server__icon"></div>
-            <div class="server__icon"></div>
-            <div class="server__icon"></div>
-            <div class="server__icon"></div>
-            <div class="server__icon"></div>
+        <nav class="nav__list">
+            <div class="nav__item"><i class="fas fa-user-circle"></i></div>
+            <div class="nav__item"><i class="far fa-comment"></i></div>
+            <div class="nav__item"></div>
+            <div class="nav__item"></div>
+            <div class="nav__item"></div>
+            <div class="nav__item"></div>
         </nav>
         <nav class="channels__list">
-            <div class="server__name">
-                <span class="name">Syviline</span>
-                <span class="settings">⚙</span>
+            <div class="container">
+                <div class="server__name">
+                    <span class="name">Syviline</span>
+                    <span class="settings">⚙</span>
+                </div>
+                <div class="category">text channels</div>
             </div>
         </nav>
         <nav class="server__body">
